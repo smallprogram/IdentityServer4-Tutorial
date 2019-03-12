@@ -3,3 +3,12 @@
 ################################################################################
 
 /Clients/.vs
+/Clients/ConsoleClient/obj
+/Clients/ConsoleClient_ResourceOwnerPassword/obj/Debug/netcoreapp2.2
+/Clients/ConsoleClient_ResourceOwnerPassword/obj
+/Clients/ConsoleClient/bin/Debug/netcoreapp2.2
+/Clients/ConsoleClient_ResourceOwnerPassword/bin/Debug/netcoreapp2.2
+/Clients/Form_ResourceOwnerPassword
+/Clients/MvcCoreClient/bin/Debug/netcoreapp2.2
+/Clients/MvcCoreClient/obj
+/Clients/packages

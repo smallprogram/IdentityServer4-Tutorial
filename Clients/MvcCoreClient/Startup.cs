@@ -63,7 +63,9 @@ namespace MvcCoreClient
                  options.Scope.Add(OidcConstants.StandardScopes.Email);
                  options.Scope.Add(OidcConstants.StandardScopes.Phone);
                  options.Scope.Add(OidcConstants.StandardScopes.Address);
-                 options.Scope.Add(OidcConstants.StandardScopes.OfflineAccess);  //获取refreshToken
+                 options.Scope.Add(OidcConstants.StandardScopes.OfflineAccess);  //获取refreshToken 用于获取刷新Access Token
+
+
              });
 
         }
