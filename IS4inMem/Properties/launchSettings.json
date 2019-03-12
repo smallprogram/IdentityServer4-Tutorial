@@ -1,0 +1,12 @@
+﻿{
+  "profiles": {
+    "IS4InMem": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5000"
+    }
+  }
+}
