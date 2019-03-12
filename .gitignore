@@ -12,3 +12,7 @@
 /Clients/MvcCoreClient/bin/Debug/netcoreapp2.2
 /Clients/MvcCoreClient/obj
 /Clients/packages
+/ApiResource/.vs/ApiResource/v15
+/ApiResource/ApiResource/bin/Debug/netcoreapp2.2
+/ApiResource/ApiResource/obj/Debug/netcoreapp2.2
+/ApiResource/ApiResource/obj
