@@ -10867,3 +10867,112 @@
 2019-03-13 14:07:20.087 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
 2019-03-13 14:07:20.089 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
 2019-03-13 14:07:20.090 +08:00 [DBG] Rendering check session result
+2019-03-13 15:43:03.806 +08:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-13 15:43:03.849 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-03-13 15:43:03.856 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-03-13 15:43:03.857 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-03-13 15:43:03.857 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-03-13 15:43:03.857 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-03-13 15:43:03.858 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-03-13 15:43:03.858 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-03-13 15:43:23.566 +08:00 [DBG] Login Url: /Account/Login
+2019-03-13 15:43:23.569 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-13 15:43:23.570 +08:00 [DBG] Logout Url: /Account/Logout
+2019-03-13 15:43:23.570 +08:00 [DBG] ConsentUrl Url: /consent
+2019-03-13 15:43:23.571 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-13 15:43:23.572 +08:00 [DBG] Error Url: /home/error
+2019-03-13 15:43:23.572 +08:00 [DBG] Error Id Parameter: errorId
+2019-03-13 15:43:23.600 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 15:43:23.604 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 15:43:23.605 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 15:43:23.613 +08:00 [DBG] Start discovery request
+2019-03-13 15:43:23.829 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-13 15:43:23.840 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-13 15:43:23.843 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-13 15:43:23.853 +08:00 [DBG] Start key discovery request
+2019-03-13 15:43:23.958 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 15:43:23.965 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 15:43:23.967 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 15:43:23.979 +08:00 [DBG] Start authorize request
+2019-03-13 15:43:23.993 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 15:43:23.998 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 15:43:24.042 +08:00 [DBG] client configuration validation for client HybirdClient succeeded.
+2019-03-13 15:43:24.054 +08:00 [DBG] Checking for PKCE parameters
+2019-03-13 15:43:24.057 +08:00 [DBG] No PKCE used.
+2019-03-13 15:43:24.107 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 15:43:24.136 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"HybirdClient","ClientName":"Asp.net Core hybird Client","RedirectUri":"http://localhost:5004/signin-oidc","AllowedRedirectUris":["http://localhost:5004/signin-oidc"],"SubjectId":"818727","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"api1 openid profile email phone address offline_access","State":"CfDJ8GXoc6OUtJFKj8EgNGiJEMkJ8dxzLo60C5uICSLwPSM5JtmqJkuu6OPX40H_2ghGSwVSj0naeFWbS8-E07oOBYOcDMjgAOSemvnrL1pwlRIBrudRtmIM2Wzo2-3tcqXU27E-tRWryyqlyTgANFb5DW5Q9EuzQDkDtPKuETuyzSo4tlWR--0L6Yfva7TmC4ExNM1JHjqE7YcTY9w0giHia22w6AKG6vSj9YexEy50gKd7m0lR2EiT5PCNtCQRINIJM1CXqdXTq2J_FOeA2vVJ16SXQVhgHUtRSIfc62jcvRkOzFKYUKn7gKLzzpRn08qXzA","UiLocales":null,"Nonce":"636880598038984094.YTQzMDMzOTgtYzI4Zi00ZmJkLTk1MjMtNDA4ZTAzMzQ4NTY4Mjk0Nzg5N2ItYjdiZS00NzRlLThkZjMtOWRiMDBmMDQ3OTk3","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"9c2c4833435dbd5d39fd821a814476e2","Raw":{"client_id":"HybirdClient","redirect_uri":"http://localhost:5004/signin-oidc","response_type":"code id_token","scope":"api1 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636880598038984094.YTQzMDMzOTgtYzI4Zi00ZmJkLTk1MjMtNDA4ZTAzMzQ4NTY4Mjk0Nzg5N2ItYjdiZS00NzRlLThkZjMtOWRiMDBmMDQ3OTk3","state":"CfDJ8GXoc6OUtJFKj8EgNGiJEMkJ8dxzLo60C5uICSLwPSM5JtmqJkuu6OPX40H_2ghGSwVSj0naeFWbS8-E07oOBYOcDMjgAOSemvnrL1pwlRIBrudRtmIM2Wzo2-3tcqXU27E-tRWryyqlyTgANFb5DW5Q9EuzQDkDtPKuETuyzSo4tlWR--0L6Yfva7TmC4ExNM1JHjqE7YcTY9w0giHia22w6AKG6vSj9YexEy50gKd7m0lR2EiT5PCNtCQRINIJM1CXqdXTq2J_FOeA2vVJ16SXQVhgHUtRSIfc62jcvRkOzFKYUKn7gKLzzpRn08qXzA","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 15:43:24.173 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 15:43:24.181 +08:00 [DBG] Scopes contains offline_access, consent is required
+2019-03-13 15:43:24.182 +08:00 [INF] Showing consent: User has not yet consented
+2019-03-13 15:43:24.498 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 15:43:24.499 +08:00 [DBG] client configuration validation for client HybirdClient succeeded.
+2019-03-13 15:43:24.505 +08:00 [DBG] Checking for PKCE parameters
+2019-03-13 15:43:24.506 +08:00 [DBG] No PKCE used.
+2019-03-13 15:43:24.509 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 15:43:24.514 +08:00 [DBG] client configuration validation for client HybirdClient succeeded.
+2019-03-13 15:43:28.645 +08:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-13 15:43:28.708 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 15:43:28.708 +08:00 [DBG] client configuration validation for client HybirdClient succeeded.
+2019-03-13 15:43:28.710 +08:00 [DBG] Checking for PKCE parameters
+2019-03-13 15:43:28.711 +08:00 [DBG] No PKCE used.
+2019-03-13 15:43:28.712 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 15:43:28.735 +08:00 [INF] {"SubjectId":"818727","ClientId":"HybirdClient","RequestedScopes":["api1","openid","profile","email","phone","address","offline_access"],"GrantedScopes":["openid","profile","address","email","phone","api1","offline_access"],"ConsentRemembered":true,"Category":"Grants","Name":"Consent granted","EventType":"Information","Id":4000,"Message":null,"ActivityId":"0HLL7GU92N6CK:00000006","TimeStamp":"2019-03-13T07:43:28.0000000Z","ProcessId":5736,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ConsentGrantedEvent"}
+2019-03-13 15:43:28.758 +08:00 [DBG] client configuration validation for client HybirdClient succeeded.
+2019-03-13 15:43:28.777 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-03-13 15:43:28.779 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-03-13 15:43:28.780 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-03-13 15:43:28.788 +08:00 [DBG] Start authorize callback request
+2019-03-13 15:43:28.794 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 15:43:28.796 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 15:43:28.797 +08:00 [DBG] client configuration validation for client HybirdClient succeeded.
+2019-03-13 15:43:28.799 +08:00 [DBG] Checking for PKCE parameters
+2019-03-13 15:43:28.800 +08:00 [DBG] No PKCE used.
+2019-03-13 15:43:28.801 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 15:43:28.806 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"HybirdClient","ClientName":"Asp.net Core hybird Client","RedirectUri":"http://localhost:5004/signin-oidc","AllowedRedirectUris":["http://localhost:5004/signin-oidc"],"SubjectId":"818727","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"api1 openid profile email phone address offline_access","State":"CfDJ8GXoc6OUtJFKj8EgNGiJEMkJ8dxzLo60C5uICSLwPSM5JtmqJkuu6OPX40H_2ghGSwVSj0naeFWbS8-E07oOBYOcDMjgAOSemvnrL1pwlRIBrudRtmIM2Wzo2-3tcqXU27E-tRWryyqlyTgANFb5DW5Q9EuzQDkDtPKuETuyzSo4tlWR--0L6Yfva7TmC4ExNM1JHjqE7YcTY9w0giHia22w6AKG6vSj9YexEy50gKd7m0lR2EiT5PCNtCQRINIJM1CXqdXTq2J_FOeA2vVJ16SXQVhgHUtRSIfc62jcvRkOzFKYUKn7gKLzzpRn08qXzA","UiLocales":null,"Nonce":"636880598038984094.YTQzMDMzOTgtYzI4Zi00ZmJkLTk1MjMtNDA4ZTAzMzQ4NTY4Mjk0Nzg5N2ItYjdiZS00NzRlLThkZjMtOWRiMDBmMDQ3OTk3","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"9c2c4833435dbd5d39fd821a814476e2","Raw":{"client_id":"HybirdClient","redirect_uri":"http://localhost:5004/signin-oidc","response_type":"code id_token","scope":"api1 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636880598038984094.YTQzMDMzOTgtYzI4Zi00ZmJkLTk1MjMtNDA4ZTAzMzQ4NTY4Mjk0Nzg5N2ItYjdiZS00NzRlLThkZjMtOWRiMDBmMDQ3OTk3","state":"CfDJ8GXoc6OUtJFKj8EgNGiJEMkJ8dxzLo60C5uICSLwPSM5JtmqJkuu6OPX40H_2ghGSwVSj0naeFWbS8-E07oOBYOcDMjgAOSemvnrL1pwlRIBrudRtmIM2Wzo2-3tcqXU27E-tRWryyqlyTgANFb5DW5Q9EuzQDkDtPKuETuyzSo4tlWR--0L6Yfva7TmC4ExNM1JHjqE7YcTY9w0giHia22w6AKG6vSj9YexEy50gKd7m0lR2EiT5PCNtCQRINIJM1CXqdXTq2J_FOeA2vVJ16SXQVhgHUtRSIfc62jcvRkOzFKYUKn7gKLzzpRn08qXzA","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 15:43:28.830 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 15:43:28.831 +08:00 [DBG] Scopes contains offline_access, consent is required
+2019-03-13 15:43:28.838 +08:00 [INF] User consented to scopes: ["openid","profile","address","email","phone","api1","offline_access"]
+2019-03-13 15:43:28.841 +08:00 [DBG] User indicated to remember consent for scopes: ["openid","profile","email","phone","address","api1","offline_access"]
+2019-03-13 15:43:28.846 +08:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: 818727
+2019-03-13 15:43:28.863 +08:00 [DBG] Creating Hybrid Flow response.
+2019-03-13 15:43:28.883 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 15:43:28.895 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: HybirdClient
+2019-03-13 15:43:28.898 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 15:43:28.989 +08:00 [INF] {"ClientId":"HybirdClient","ClientName":"Asp.net Core hybird Client","RedirectUri":"http://localhost:5004/signin-oidc","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile email phone address api1 offline_access","GrantType":"hybrid","Tokens":[{"TokenType":"id_token","TokenValue":"****FMDA","$type":"Token"},{"TokenType":"code","TokenValue":"****8445","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7GU92N6CK:00000007","TimeStamp":"2019-03-13T07:43:28.0000000Z","ProcessId":5736,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 15:43:28.998 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"HybirdClient","RedirectUri":"http://localhost:5004/signin-oidc","State":"CfDJ8GXoc6OUtJFKj8EgNGiJEMkJ8dxzLo60C5uICSLwPSM5JtmqJkuu6OPX40H_2ghGSwVSj0naeFWbS8-E07oOBYOcDMjgAOSemvnrL1pwlRIBrudRtmIM2Wzo2-3tcqXU27E-tRWryyqlyTgANFb5DW5Q9EuzQDkDtPKuETuyzSo4tlWR--0L6Yfva7TmC4ExNM1JHjqE7YcTY9w0giHia22w6AKG6vSj9YexEy50gKd7m0lR2EiT5PCNtCQRINIJM1CXqdXTq2J_FOeA2vVJ16SXQVhgHUtRSIfc62jcvRkOzFKYUKn7gKLzzpRn08qXzA","Scope":"openid profile email phone address api1 offline_access","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 15:43:29.027 +08:00 [DBG] Augmenting SignInContext
+2019-03-13 15:43:29.040 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-03-13 15:43:29.199 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-03-13 15:43:29.204 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-03-13 15:43:29.205 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-03-13 15:43:29.215 +08:00 [DBG] Start token request.
+2019-03-13 15:43:29.223 +08:00 [DBG] Start client validation
+2019-03-13 15:43:29.227 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-03-13 15:43:29.231 +08:00 [DBG] Start parsing for secret in post body
+2019-03-13 15:43:29.232 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-03-13 15:43:29.232 +08:00 [DBG] Secret id found: HybirdClient
+2019-03-13 15:43:29.233 +08:00 [DBG] client configuration validation for client HybirdClient succeeded.
+2019-03-13 15:43:29.244 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-03-13 15:43:29.244 +08:00 [DBG] Client validation success
+2019-03-13 15:43:29.245 +08:00 [INF] {"ClientId":"HybirdClient","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLL7GU92N6CJ:00000003","TimeStamp":"2019-03-13T07:43:29.0000000Z","ProcessId":5736,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-03-13 15:43:29.256 +08:00 [DBG] Start token request validation
+2019-03-13 15:43:29.266 +08:00 [DBG] Start validation of authorization code token request
+2019-03-13 15:43:29.279 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-03-13 15:43:29.280 +08:00 [DBG] Validation of authorization code token request success
+2019-03-13 15:43:29.284 +08:00 [INF] Token request validation success
+{"ClientId":"HybirdClient","ClientName":"Asp.net Core hybird Client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"3cf085fafad252019dfdfdd2ead1aaec06146cae659d29d12a44e42ca1b08445","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"HybirdClient","client_secret":"***REDACTED***","code":"3cf085fafad252019dfdfdd2ead1aaec06146cae659d29d12a44e42ca1b08445","grant_type":"authorization_code","redirect_uri":"http://localhost:5004/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2019-03-13 15:43:29.302 +08:00 [DBG] client configuration validation for client HybirdClient succeeded.
+2019-03-13 15:43:29.311 +08:00 [DBG] Getting claims for access token for client: HybirdClient
+2019-03-13 15:43:29.312 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 15:43:29.315 +08:00 [DBG] Get profile called for subject 818727 from client Asp.net Core hybird Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 15:43:29.317 +08:00 [DBG] Issued claims: []
+2019-03-13 15:43:29.324 +08:00 [DBG] Creating refresh token
+2019-03-13 15:43:29.325 +08:00 [DBG] Setting an absolute lifetime: 2592000
+2019-03-13 15:43:29.336 +08:00 [DBG] client configuration validation for client HybirdClient succeeded.
+2019-03-13 15:43:29.338 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: HybirdClient
+2019-03-13 15:43:29.339 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 15:43:29.345 +08:00 [INF] {"ClientId":"HybirdClient","ClientName":"Asp.net Core hybird Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid profile email phone address api1 offline_access","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****peaw","$type":"Token"},{"TokenType":"refresh_token","TokenValue":"****6921","$type":"Token"},{"TokenType":"access_token","TokenValue":"****atiA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7GU92N6CJ:00000003","TimeStamp":"2019-03-13T07:43:29.0000000Z","ProcessId":5736,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 15:43:29.356 +08:00 [DBG] Token request success.
