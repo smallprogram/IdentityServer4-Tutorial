@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClient_ClientCredent
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClient_ResourceOwnerPassword", "ConsoleClient_ResourceOwnerPassword\ConsoleClient_ResourceOwnerPassword.csproj", "{D9B0F0F3-C06F-4B6F-9C51-0EA7ACF8B919}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcCoreClient", "MvcCoreClient\MvcCoreClient.csproj", "{12F97095-7139-406C-9CBB-5C3490A63279}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcCore_AuthorizationCodeClient", "MvcCoreClient\MvcCore_AuthorizationCodeClient.csproj", "{12F97095-7139-406C-9CBB-5C3490A63279}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form_ResourceOwnerPassword", "Form_ResourceOwnerPassword\Form_ResourceOwnerPassword.csproj", "{E3A671BB-089D-4FBB-94D4-043E2D4A7E33}"
 EndProject
