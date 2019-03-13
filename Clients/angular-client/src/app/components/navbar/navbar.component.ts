@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { OpenIdConnectService } from 'src/app/oidc/open-id-connect.service';
 
 @Component({
   selector: 'app-navbar',
@@ -15,6 +16,6 @@ export class NavbarComponent {
       map(result => result.matches)
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver,public oidc:OpenIdConnectService) {}
 
 }

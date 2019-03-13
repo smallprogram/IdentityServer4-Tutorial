@@ -9,9 +9,12 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule, MatInputModule, MatSelectModule, MatRadioModule, MatSnackBarModule } from '@angular/material';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TodoTableComponent } from './components/todo-table/todo-table.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SigninOidcComponent } from './oidc/signin-oidc/signin-oidc.component';
+import { RedirectSilentRenewComponent } from './oidc/redirect-silent-renew/redirect-silent-renew.component';
+import { AuthorizationHeaderInterceptor } from './oidc/authorization-header-interceptor';
 
 
 
@@ -21,12 +24,14 @@ import { ReactiveFormsModule} from '@angular/forms';
     NavbarComponent,
     DashboardComponent,
     TodoTableComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    SigninOidcComponent,
+    RedirectSilentRenewComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule ,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
@@ -47,7 +52,14 @@ import { ReactiveFormsModule} from '@angular/forms';
     MatSnackBarModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    //注册request拦截器
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthorizationHeaderInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

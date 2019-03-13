@@ -20,6 +20,7 @@ export class OpenIdConnectService {
     return this.currentUser;
   }
 
+  //一个发布和订阅的量，用于订阅者判断当前是否有用户登录
   userLoaded$ = new ReplaySubject<boolean>(1);
 
   constructor() {
@@ -55,27 +56,27 @@ export class OpenIdConnectService {
     });
   }
 
-
+  //用于跳转至授权服务器的方法
   triggerSignIn() {
     this.userManager.signinRedirect().then(() => {
       console.log('triggerSignIn');
     });
   }
-
+  //用于登录之后回调的方法
   handleCallback() {
     this.userManager.signinRedirectCallback().then(user => {
       this.currentUser = user;
       console.log('handleCallback');
     });
   }
-
+  //用于自动刷新token的回调方法
   handleSilentCallback() {
     this.userManager.signinSilentCallback().then(user => {
       this.currentUser = user;
       console.log('handleSilentCallback');
     });
   }
-
+  //用于登出的方法
   triggerSignOut() {
     this.userManager.signoutRedirect().then(res => {
       console.log('triggerSignOut');
