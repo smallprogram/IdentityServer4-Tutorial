@@ -140,9 +140,10 @@ namespace IS4inMem
                     ClientId = "HybirdClient",
                     ClientName = "Asp.net Core hybird Client",
                     AllowedGrantTypes = GrantTypes.Hybrid,
+                    ClientSecrets = { new Secret("bc6126ff-fcf2-4e67-a912-4e70cd2fb73d".Sha256()) },
 
-                    RedirectUris = { "http://localhost:6000/signin-oidc" },   //登录之后的跳转地址
-                    PostLogoutRedirectUris = { "http://localhost:6000/signout-callback-oidc" },  //登出之后的跳转地址
+                    RedirectUris = { "http://localhost:5004/signin-oidc" },   //登录之后的跳转地址
+                    PostLogoutRedirectUris = { "http://localhost:5004/signout-callback-oidc" },  //登出之后的跳转地址
 
                     AllowOfflineAccess = true, //返回refreshToken
 
