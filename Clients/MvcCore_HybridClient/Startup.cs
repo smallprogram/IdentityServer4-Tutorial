@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace MvcCore_HybridClient
@@ -44,7 +45,10 @@ namespace MvcCore_HybridClient
                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;   //配置默认cookie的名字
                 options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;   //配置OpenID Connect的默认名字
             })
-            .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)   //添加Cookies
+            .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme,options =>
+            {
+                options.AccessDeniedPath = "/Account/AccessDenied";
+            })   //添加Cookies
             .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>    //配置oidc
             {
                 options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -64,6 +68,7 @@ namespace MvcCore_HybridClient
                 options.Scope.Add(OidcConstants.StandardScopes.Email);
                 options.Scope.Add(OidcConstants.StandardScopes.Phone);
                 options.Scope.Add(OidcConstants.StandardScopes.Address);
+                options.Scope.Add("roles");
                 options.Scope.Add(OidcConstants.StandardScopes.OfflineAccess);  //获取refreshToken 用于获取刷新Access Token
 
 
@@ -78,6 +83,14 @@ namespace MvcCore_HybridClient
                 options.ClaimActions.DeleteClaim("sid");
                 options.ClaimActions.DeleteClaim("sub");
                 options.ClaimActions.DeleteClaim("idp");
+
+
+                // 让IdentityServer里的Claim里面的角色映射到mvc系统识别的角色
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    NameClaimType = JwtClaimTypes.Name,
+                    RoleClaimType = JwtClaimTypes.Role
+                };
 
             });
         }

@@ -39,12 +39,22 @@
                         }
                         else
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                            </li>
+                            if (User.IsInRole("admin") || User.IsInRole("user"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                                </li>
+                            }
+                            if (
+                                User.IsInRole("admin")
+                                //User.Claims.Where(m => m.Type == "roles").FirstOrDefault().Value == "admin" ||
+                                //User.Claims.Where(m => m.Type == "roles").FirstOrDefault().Value == "user"
+                                )
+                            {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ApiSource">ApiSource</a>
                             </li>
+                            }
                             <li class="nav-item">
                                 <span class="nav-link text-dark">@User.Claims.Where(m => m.Type == "name").FirstOrDefault().Value</span>
                             </li>
