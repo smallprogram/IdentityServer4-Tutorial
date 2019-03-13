@@ -29,7 +29,7 @@ namespace IS4inMem
         {
             return new ApiResource[]
             {
-                new ApiResource("api1", "My API #1",new List<string> {"locations" })
+                new ApiResource("api1", "My API #1", new List<string> {"locations" })
             };
         }
 
