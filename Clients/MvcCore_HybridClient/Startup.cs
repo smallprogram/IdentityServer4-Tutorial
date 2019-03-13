@@ -1,4 +1,5 @@
 ﻿using IdentityModel;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
@@ -65,6 +66,18 @@ namespace MvcCore_HybridClient
                 options.Scope.Add(OidcConstants.StandardScopes.Address);
                 options.Scope.Add(OidcConstants.StandardScopes.OfflineAccess);  //获取refreshToken 用于获取刷新Access Token
 
+
+                // ClaimActions集合里的东西 都是要被过滤掉的属性，nbf amr exp...
+                //如果想不把默认过滤的东西过滤掉，需要在该集合中去除
+                options.ClaimActions.Remove("nbf");
+                options.ClaimActions.Remove("amr");
+                options.ClaimActions.Remove("exp");
+
+
+                // 如果想手动过滤掉一些Claim，需要向ClaimActions添加需要过滤的东西
+                options.ClaimActions.DeleteClaim("sid");
+                options.ClaimActions.DeleteClaim("sub");
+                options.ClaimActions.DeleteClaim("idp");
 
             });
         }
