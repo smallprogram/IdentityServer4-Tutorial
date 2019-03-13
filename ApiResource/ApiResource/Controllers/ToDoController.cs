@@ -1,4 +1,5 @@
 ﻿using ApiResource.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using System;
@@ -8,6 +9,7 @@ namespace ApiResource.Controllers
 {
     [Route("api/todo")]
     [ApiController]
+    [Authorize]
     public class ToDoController : ControllerBase
     {
         private readonly IMemoryCache _memoryCache;
