@@ -10145,3 +10145,725 @@
 2019-03-13 10:39:29.294 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
 2019-03-13 10:39:29.295 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
 2019-03-13 10:39:29.299 +08:00 [DBG] Rendering check session result
+2019-03-13 13:47:58.223 +08:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-13 13:47:58.268 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-03-13 13:47:58.276 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-03-13 13:47:58.276 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-03-13 13:47:58.277 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-03-13 13:47:58.277 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-03-13 13:47:58.277 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-03-13 13:47:58.277 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-03-13 13:48:29.599 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:48:29.614 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:48:29.614 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:48:29.696 +08:00 [DBG] Login Url: /Account/Login
+2019-03-13 13:48:29.696 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-13 13:48:29.700 +08:00 [DBG] Logout Url: /Account/Logout
+2019-03-13 13:48:29.700 +08:00 [DBG] ConsentUrl Url: /consent
+2019-03-13 13:48:29.701 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-13 13:48:29.702 +08:00 [DBG] Error Url: /home/error
+2019-03-13 13:48:29.703 +08:00 [DBG] Error Id Parameter: errorId
+2019-03-13 13:48:29.720 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:48:29.725 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:48:29.726 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:48:29.730 +08:00 [DBG] Start discovery request
+2019-03-13 13:48:29.834 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:48:29.842 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:48:29.845 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:48:29.847 +08:00 [DBG] Rendering check session result
+2019-03-13 13:48:32.614 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:48:32.616 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:48:32.623 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:48:32.626 +08:00 [DBG] Start discovery request
+2019-03-13 13:48:32.782 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-13 13:48:32.784 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-13 13:48:32.785 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-13 13:48:32.789 +08:00 [DBG] Start key discovery request
+2019-03-13 13:48:52.249 +08:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-03-13 13:48:52.253 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-03-13 13:48:52.254 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-03-13 13:48:52.266 +08:00 [DBG] Processing signout request for 818727
+2019-03-13 13:48:52.272 +08:00 [DBG] Start end session request validation
+2019-03-13 13:48:52.278 +08:00 [DBG] Start identity token validation
+2019-03-13 13:48:52.325 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:48:52.327 +08:00 [DBG] Client found: AngularClient / SPA Client
+2019-03-13 13:48:52.398 +08:00 [DBG] IsActive called from: IdentityTokenValidation
+2019-03-13 13:48:52.399 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-13 13:48:52.412 +08:00 [DBG] Token validation success
+{"ClientId":"AngularClient","ClientName":"SPA Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1552444518,"exp":1552444818,"iss":"http://localhost:5000","aud":"AngularClient","nonce":"8b501a80cd8d468d946499bb35993965","iat":1552444518,"at_hash":"GKTglCmTjJg_kSe58TmZpA","sid":"e4a7e81f616bfcf6b409036ca2bf377f","sub":"818727","auth_time":1552444518,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-13 13:48:52.438 +08:00 [INF] End session request validation success
+{"ClientId":"AngularClient","ClientName":"SPA Client","SubjectId":"818727","PostLogOutUri":"http://localhost:4200","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlNDMyN2Y2YmMwMDFhNDk0ZTljN2Q5ZGY1Nzc3NTg5IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTI0NDQ1MTgsImV4cCI6MTU1MjQ0NDgxOCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoiQW5ndWxhckNsaWVudCIsIm5vbmNlIjoiOGI1MDFhODBjZDhkNDY4ZDk0NjQ5OWJiMzU5OTM5NjUiLCJpYXQiOjE1NTI0NDQ1MTgsImF0X2hhc2giOiJHS1RnbENtVGpKZ19rU2U1OFRtWnBBIiwic2lkIjoiZTRhN2U4MWY2MTZiZmNmNmI0MDkwMzZjYTJiZjM3N2YiLCJzdWIiOiI4MTg3MjciLCJhdXRoX3RpbWUiOjE1NTI0NDQ1MTgsImlkcCI6ImxvY2FsIiwiYW1yIjpbInB3ZCJdfQ.j9wwwE0CB6kUadSqyYrWVLIJ4FROUKT04d7Q1DAlbgLNzCxduVUf29uHhiv7tQabxXtCc45uiGrkiCQRNKGdNzQeHKV5AVMYhvRFOVapoKfaqb2jZiT92rJpu9c5MNiT8oXB-VQmzQFo96CtJphEzJE3Tb5-HmcIUjAy2HgXC4UNKodfOE5lKje_lJUHfbSdVAIn-td5DGt3jXnWwd7CDksKyyQtrWWAfW0q0cgGmW1ykd-5NOTP6m1wiZzjbj-v0zquzzLXro7Z9UeblnBsctpvixNgAUksT2EMRUIA2VFYbl_fde8IOdy-rCziZ6Zq8-05CP6xk6Lmvvn3r4OeCg"},"$type":"EndSessionRequestValidationLog"}
+2019-03-13 13:48:52.447 +08:00 [DBG] Success validating end session request from AngularClient
+2019-03-13 13:48:52.768 +08:00 [INF] AuthenticationScheme: idsrv signed out.
+2019-03-13 13:48:52.784 +08:00 [INF] {"SubjectId":"818727","DisplayName":"alice","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLL7EU26IUO7:00000003","TimeStamp":"2019-03-13T05:48:52.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-03-13 13:48:52.969 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-03-13 13:48:53.000 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-03-13 13:48:53.001 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-03-13 13:48:53.012 +08:00 [DBG] Processing signout callback request
+2019-03-13 13:48:53.028 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:48:53.029 +08:00 [DBG] No client front-channel logout URLs
+2019-03-13 13:48:53.032 +08:00 [DBG] No client back-channel logout URLs
+2019-03-13 13:48:53.034 +08:00 [INF] Successful signout callback.
+2019-03-13 13:48:53.035 +08:00 [DBG] No client front-channel iframe urls
+2019-03-13 13:48:53.035 +08:00 [DBG] No client back-channel iframe urls
+2019-03-13 13:48:56.949 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:48:56.952 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:48:56.953 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:48:56.954 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:48:56.955 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:48:56.956 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:48:56.958 +08:00 [DBG] Start discovery request
+2019-03-13 13:48:56.982 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:48:56.985 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:48:56.986 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:48:56.992 +08:00 [DBG] Start authorize request
+2019-03-13 13:48:56.999 +08:00 [DBG] No user present in authorize request
+2019-03-13 13:48:57.003 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:48:57.011 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:48:57.049 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:48:57.055 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"792cb01d245d48dbb16a4a3629d21796","UiLocales":null,"Nonce":"cdeb0ffb323f4bd8ac965e1d15042757","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"792cb01d245d48dbb16a4a3629d21796","nonce":"cdeb0ffb323f4bd8ac965e1d15042757"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:48:57.076 +08:00 [INF] Showing login: User is not authenticated
+2019-03-13 13:48:57.123 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:48:57.124 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:48:57.128 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:48:57.131 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:01.974 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-13 13:49:02.034 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:49:02.035 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:02.039 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:49:02.041 +08:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"818727","DisplayName":"alice","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLL7EU26IUOC:00000005","TimeStamp":"2019-03-13T05:49:02.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-03-13 13:49:02.055 +08:00 [DBG] Augmenting SignInContext
+2019-03-13 13:49:02.059 +08:00 [DBG] Adding idp claim with value: local
+2019-03-13 13:49:02.059 +08:00 [DBG] Adding amr claim with value: pwd
+2019-03-13 13:49:02.066 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-03-13 13:49:02.068 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:02.075 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-03-13 13:49:02.077 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-03-13 13:49:02.080 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-03-13 13:49:02.088 +08:00 [DBG] Start authorize callback request
+2019-03-13 13:49:02.092 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:49:02.092 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:49:02.094 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:02.096 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:49:02.099 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"792cb01d245d48dbb16a4a3629d21796","UiLocales":null,"Nonce":"cdeb0ffb323f4bd8ac965e1d15042757","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"bf04b2b1352f396ecb7e125a1099457e","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"792cb01d245d48dbb16a4a3629d21796","nonce":"cdeb0ffb323f4bd8ac965e1d15042757"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:49:02.108 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:49:02.122 +08:00 [DBG] user_consent grant with value: AngularClient|818727 not found in store.
+2019-03-13 13:49:02.123 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-03-13 13:49:02.125 +08:00 [INF] Showing consent: User has not yet consented
+2019-03-13 13:49:02.167 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:49:02.167 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:02.169 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:49:02.170 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:08.668 +08:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-13 13:49:08.714 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:49:08.715 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:08.717 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:49:08.720 +08:00 [INF] {"SubjectId":"818727","ClientId":"AngularClient","RequestedScopes":["api1","openid","profile","address","email","phone"],"GrantedScopes":["openid","profile","address","email","phone","api1"],"ConsentRemembered":true,"Category":"Grants","Name":"Consent granted","EventType":"Information","Id":4000,"Message":null,"ActivityId":"0HLL7EU26IUOC:00000009","TimeStamp":"2019-03-13T05:49:08.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ConsentGrantedEvent"}
+2019-03-13 13:49:08.738 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:08.745 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-03-13 13:49:08.747 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-03-13 13:49:08.749 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-03-13 13:49:08.750 +08:00 [DBG] Start authorize callback request
+2019-03-13 13:49:08.753 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:49:08.756 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:49:08.757 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:08.758 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:49:08.760 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"792cb01d245d48dbb16a4a3629d21796","UiLocales":null,"Nonce":"cdeb0ffb323f4bd8ac965e1d15042757","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"bf04b2b1352f396ecb7e125a1099457e","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"792cb01d245d48dbb16a4a3629d21796","nonce":"cdeb0ffb323f4bd8ac965e1d15042757"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:49:08.770 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:49:08.771 +08:00 [DBG] user_consent grant with value: AngularClient|818727 not found in store.
+2019-03-13 13:49:08.772 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-03-13 13:49:08.776 +08:00 [INF] User consented to scopes: ["openid","profile","address","email","phone","api1"]
+2019-03-13 13:49:08.780 +08:00 [DBG] User indicated to remember consent for scopes: ["openid","profile","address","email","phone","api1"]
+2019-03-13 13:49:08.784 +08:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: 818727
+2019-03-13 13:49:08.798 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:49:08.809 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:49:08.809 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:49:08.813 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:49:08.815 +08:00 [DBG] Issued claims: []
+2019-03-13 13:49:08.849 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:49:08.851 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:49:08.859 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****J9_g","$type":"Token"},{"TokenType":"access_token","TokenValue":"****5lpQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:0000000A","TimeStamp":"2019-03-13T05:49:08.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:49:08.866 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/signin-oidc","State":"792cb01d245d48dbb16a4a3629d21796","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:49:08.879 +08:00 [DBG] Augmenting SignInContext
+2019-03-13 13:49:08.880 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-03-13 13:49:09.911 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:49:09.913 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:49:09.915 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:49:09.918 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:49:09.921 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:49:09.923 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:49:09.927 +08:00 [DBG] Start discovery request
+2019-03-13 13:49:09.935 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2019-03-13 13:49:09.936 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:49:09.944 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:49:09.946 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-13 13:49:09.948 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-13 13:49:09.950 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-13 13:49:09.953 +08:00 [DBG] Start key discovery request
+2019-03-13 13:49:09.970 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2019-03-13 13:49:09.971 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:49:09.972 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:49:09.977 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2019-03-13 13:49:09.978 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:49:09.979 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:49:09.980 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-03-13 13:49:09.982 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-03-13 13:49:09.984 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-03-13 13:49:09.990 +08:00 [DBG] Start userinfo request
+2019-03-13 13:49:09.994 +08:00 [DBG] Bearer token found in header
+2019-03-13 13:49:10.005 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:10.006 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:10.007 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-03-13 13:49:10.007 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-13 13:49:10.008 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1552456148,"exp":1552456448,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"AngularClient","sub":"818727","auth_time":1552456142,"idp":"local","scope":["openid","profile","address","email","phone","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-13 13:49:10.014 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-03-13 13:49:10.019 +08:00 [DBG] Creating userinfo response
+2019-03-13 13:49:10.022 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:49:10.025 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:49:10.028 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at address email email_verified phone_number phone_number_verified
+2019-03-13 13:49:10.029 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:49:10.030 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","email","email_verified","phone_number","phone_number_verified"] via UserInfoEndpoint
+2019-03-13 13:49:10.035 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address"]
+2019-03-13 13:49:10.036 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website address
+2019-03-13 13:49:10.037 +08:00 [DBG] End userinfo request
+2019-03-13 13:49:10.061 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:49:10.065 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:49:10.067 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:49:10.068 +08:00 [DBG] Rendering check session result
+2019-03-13 13:49:49.209 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:49:49.211 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:49:49.215 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:49:49.220 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:49:49.221 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:49:49.223 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:49:49.226 +08:00 [DBG] Start discovery request
+2019-03-13 13:49:49.254 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:49:49.257 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:49:49.261 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:49:49.264 +08:00 [DBG] Start authorize request
+2019-03-13 13:49:49.265 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:49:49.266 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:49:49.267 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:49.272 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:49:49.274 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"d30a08ae6055463db689086d7b41fb70","UiLocales":null,"Nonce":"d1053b4ad3254cc19182e5024a59f877","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"bf04b2b1352f396ecb7e125a1099457e","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"d30a08ae6055463db689086d7b41fb70","nonce":"d1053b4ad3254cc19182e5024a59f877"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:49:49.282 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:49:49.290 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-13 13:49:49.291 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:49:49.292 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:49:49.293 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:49:49.293 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:49:49.295 +08:00 [DBG] Issued claims: []
+2019-03-13 13:49:49.299 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:49:49.301 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:49:49.304 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****rCKQ","$type":"Token"},{"TokenType":"access_token","TokenValue":"****BwgA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:0000000C","TimeStamp":"2019-03-13T05:49:49.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:49:49.311 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/signin-oidc","State":"d30a08ae6055463db689086d7b41fb70","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:49:49.941 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:49:49.943 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:49:49.945 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:49:49.946 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:49:49.947 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:49:49.948 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:49:49.949 +08:00 [DBG] Start discovery request
+2019-03-13 13:49:49.959 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2019-03-13 13:49:49.960 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:49:49.961 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:49:49.962 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-13 13:49:49.965 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-13 13:49:49.966 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-13 13:49:49.968 +08:00 [DBG] Start key discovery request
+2019-03-13 13:49:49.987 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2019-03-13 13:49:49.991 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:49:49.993 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:49:49.998 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2019-03-13 13:49:49.999 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:49:50.000 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:49:50.001 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-03-13 13:49:50.002 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-03-13 13:49:50.008 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-03-13 13:49:50.009 +08:00 [DBG] Start userinfo request
+2019-03-13 13:49:50.010 +08:00 [DBG] Bearer token found in header
+2019-03-13 13:49:50.013 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:50.015 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:49:50.016 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-03-13 13:49:50.016 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-13 13:49:50.022 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1552456189,"exp":1552456489,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"AngularClient","sub":"818727","auth_time":1552456142,"idp":"local","scope":["openid","profile","address","email","phone","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-13 13:49:50.051 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-03-13 13:49:50.052 +08:00 [DBG] Creating userinfo response
+2019-03-13 13:49:50.053 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:49:50.058 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:49:50.064 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at address email email_verified phone_number phone_number_verified
+2019-03-13 13:49:50.067 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:49:50.069 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","email","email_verified","phone_number","phone_number_verified"] via UserInfoEndpoint
+2019-03-13 13:49:50.074 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address"]
+2019-03-13 13:49:50.075 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website address
+2019-03-13 13:49:50.076 +08:00 [DBG] End userinfo request
+2019-03-13 13:49:50.138 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:49:50.143 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:49:50.146 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:49:50.148 +08:00 [DBG] Rendering check session result
+2019-03-13 13:50:19.797 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:50:19.798 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:50:19.799 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:50:19.803 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:50:19.804 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:50:19.805 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:50:19.807 +08:00 [DBG] Start discovery request
+2019-03-13 13:50:19.851 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:50:19.853 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:50:19.855 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:50:19.856 +08:00 [DBG] Start authorize request
+2019-03-13 13:50:19.859 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:50:19.860 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:50:19.861 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:50:19.862 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:50:19.865 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"6470bdcf117d44b5b00d859e86f9ac48","UiLocales":null,"Nonce":"882e532754694065b196491a02298750","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"bf04b2b1352f396ecb7e125a1099457e","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"6470bdcf117d44b5b00d859e86f9ac48","nonce":"882e532754694065b196491a02298750"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:50:19.876 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:50:19.877 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-13 13:50:19.878 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:50:19.880 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:50:19.881 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:50:19.881 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:50:19.883 +08:00 [DBG] Issued claims: []
+2019-03-13 13:50:19.888 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:50:19.889 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:50:19.894 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****Df5Q","$type":"Token"},{"TokenType":"access_token","TokenValue":"****60LQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:0000000E","TimeStamp":"2019-03-13T05:50:19.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:50:19.900 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/signin-oidc","State":"6470bdcf117d44b5b00d859e86f9ac48","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:50:20.520 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:50:20.521 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:50:20.523 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:50:20.527 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:50:20.534 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:50:20.541 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:50:20.543 +08:00 [DBG] Start discovery request
+2019-03-13 13:50:20.548 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2019-03-13 13:50:20.550 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:50:20.553 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:50:20.554 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-13 13:50:20.556 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-13 13:50:20.558 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-13 13:50:20.559 +08:00 [DBG] Start key discovery request
+2019-03-13 13:50:20.574 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2019-03-13 13:50:20.576 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:50:20.579 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:50:20.585 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2019-03-13 13:50:20.587 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:50:20.588 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:50:20.589 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-03-13 13:50:20.591 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-03-13 13:50:20.592 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-03-13 13:50:20.593 +08:00 [DBG] Start userinfo request
+2019-03-13 13:50:20.595 +08:00 [DBG] Bearer token found in header
+2019-03-13 13:50:20.598 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:50:20.599 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:50:20.600 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-03-13 13:50:20.601 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-13 13:50:20.602 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1552456219,"exp":1552456519,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"AngularClient","sub":"818727","auth_time":1552456142,"idp":"local","scope":["openid","profile","address","email","phone","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-13 13:50:20.613 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-03-13 13:50:20.616 +08:00 [DBG] Creating userinfo response
+2019-03-13 13:50:20.622 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:50:20.627 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:50:20.628 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at address email email_verified phone_number phone_number_verified
+2019-03-13 13:50:20.629 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:50:20.633 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","email","email_verified","phone_number","phone_number_verified"] via UserInfoEndpoint
+2019-03-13 13:50:20.643 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address"]
+2019-03-13 13:50:20.645 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website address
+2019-03-13 13:50:20.647 +08:00 [DBG] End userinfo request
+2019-03-13 13:50:20.680 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:50:20.682 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:50:20.683 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:50:20.685 +08:00 [DBG] Rendering check session result
+2019-03-13 13:50:31.823 +08:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-03-13 13:50:31.827 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-03-13 13:50:31.828 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-03-13 13:50:31.829 +08:00 [DBG] Processing signout request for 818727
+2019-03-13 13:50:31.830 +08:00 [DBG] Start end session request validation
+2019-03-13 13:50:31.831 +08:00 [DBG] Start identity token validation
+2019-03-13 13:50:31.833 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:50:31.839 +08:00 [DBG] Client found: AngularClient / SPA Client
+2019-03-13 13:50:31.842 +08:00 [DBG] IsActive called from: IdentityTokenValidation
+2019-03-13 13:50:31.842 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-13 13:50:31.845 +08:00 [DBG] Token validation success
+{"ClientId":"AngularClient","ClientName":"SPA Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1552456189,"exp":1552456489,"iss":"http://localhost:5000","aud":"AngularClient","nonce":"d1053b4ad3254cc19182e5024a59f877","iat":1552456189,"at_hash":"r0wk7hM_kbQrWh14J-mbvA","sid":"bf04b2b1352f396ecb7e125a1099457e","sub":"818727","auth_time":1552456142,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-13 13:50:31.851 +08:00 [INF] End session request validation success
+{"ClientId":"AngularClient","ClientName":"SPA Client","SubjectId":"818727","PostLogOutUri":"http://localhost:4200","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlNDMyN2Y2YmMwMDFhNDk0ZTljN2Q5ZGY1Nzc3NTg5IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NTI0NTYxODksImV4cCI6MTU1MjQ1NjQ4OSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoiQW5ndWxhckNsaWVudCIsIm5vbmNlIjoiZDEwNTNiNGFkMzI1NGNjMTkxODJlNTAyNGE1OWY4NzciLCJpYXQiOjE1NTI0NTYxODksImF0X2hhc2giOiJyMHdrN2hNX2tiUXJXaDE0Si1tYnZBIiwic2lkIjoiYmYwNGIyYjEzNTJmMzk2ZWNiN2UxMjVhMTA5OTQ1N2UiLCJzdWIiOiI4MTg3MjciLCJhdXRoX3RpbWUiOjE1NTI0NTYxNDIsImlkcCI6ImxvY2FsIiwiYW1yIjpbInB3ZCJdfQ.HbZOWePmFlTdHS3XZVoksgFND5YSsoA0saVq6pEQxA6e6Qik0aWFEXTi3ggS_MCHzxeRmENtvWhfNbTipXqitFmuWsy_bVfkxL7YxkBFFG9UfgDIrpTiZsI7YRF2C_E6NMNMFrH6_oCo-nhlETZ5LKPdetrRK8xB5xAPeBeWHZ0uV1_418peXpHpRiaY1TeQHZEZXzUJ_fgC8leA-agC1DV8Jif0Jw7xO8OuQjJCFNvX8GvnGd68bG6z2zVtClqogL5-HDng07M1-TH5VV9qtcoMRWaThuxJx41IumvVynzskRASzyY5-0JRnq6fl-9iKemfjiwu_BXrhFEWPxrCKQ"},"$type":"EndSessionRequestValidationLog"}
+2019-03-13 13:50:31.856 +08:00 [DBG] Success validating end session request from AngularClient
+2019-03-13 13:50:31.907 +08:00 [INF] AuthenticationScheme: idsrv signed out.
+2019-03-13 13:50:31.909 +08:00 [INF] {"SubjectId":"818727","DisplayName":"alice","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLL7EU26IUOC:00000011","TimeStamp":"2019-03-13T05:50:31.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-03-13 13:50:31.962 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-03-13 13:50:31.968 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-03-13 13:50:31.971 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-03-13 13:50:31.974 +08:00 [DBG] Processing signout callback request
+2019-03-13 13:50:31.975 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:50:31.981 +08:00 [DBG] No client front-channel logout URLs
+2019-03-13 13:50:31.982 +08:00 [DBG] No client back-channel logout URLs
+2019-03-13 13:50:31.983 +08:00 [INF] Successful signout callback.
+2019-03-13 13:50:31.983 +08:00 [DBG] No client front-channel iframe urls
+2019-03-13 13:50:31.984 +08:00 [DBG] No client back-channel iframe urls
+2019-03-13 13:52:34.439 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:52:34.442 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:52:34.446 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:52:34.447 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:52:34.448 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:52:34.449 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:52:34.450 +08:00 [DBG] Start discovery request
+2019-03-13 13:52:34.487 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:52:34.489 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:52:34.490 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:52:34.492 +08:00 [DBG] Start authorize request
+2019-03-13 13:52:34.493 +08:00 [DBG] No user present in authorize request
+2019-03-13 13:52:34.493 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:52:34.494 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:52:34.496 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:52:34.500 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"3e7f1a16e00d40c6ab1a48ec50a1f6a0","UiLocales":null,"Nonce":"addd326346c2487da27767932d2a4950","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"3e7f1a16e00d40c6ab1a48ec50a1f6a0","nonce":"addd326346c2487da27767932d2a4950"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:52:34.516 +08:00 [INF] Showing login: User is not authenticated
+2019-03-13 13:52:34.549 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:52:34.549 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:52:34.552 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:52:34.555 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:52:43.154 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-13 13:52:43.179 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:52:43.180 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:52:43.181 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:52:43.183 +08:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"818727","DisplayName":"alice","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLL7EU26IUOC:00000015","TimeStamp":"2019-03-13T05:52:43.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-03-13 13:52:43.188 +08:00 [DBG] Augmenting SignInContext
+2019-03-13 13:52:43.189 +08:00 [DBG] Adding idp claim with value: local
+2019-03-13 13:52:43.192 +08:00 [DBG] Adding amr claim with value: pwd
+2019-03-13 13:52:43.193 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-03-13 13:52:43.194 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:52:43.201 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-03-13 13:52:43.203 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-03-13 13:52:43.206 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-03-13 13:52:43.208 +08:00 [DBG] Start authorize callback request
+2019-03-13 13:52:43.211 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:52:43.211 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:52:43.212 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:52:43.214 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:52:43.215 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"3e7f1a16e00d40c6ab1a48ec50a1f6a0","UiLocales":null,"Nonce":"addd326346c2487da27767932d2a4950","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"9c2c4833435dbd5d39fd821a814476e2","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"3e7f1a16e00d40c6ab1a48ec50a1f6a0","nonce":"addd326346c2487da27767932d2a4950"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:52:43.225 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:52:43.226 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-13 13:52:43.227 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:52:43.228 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:52:43.228 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:52:43.229 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:52:43.233 +08:00 [DBG] Issued claims: []
+2019-03-13 13:52:43.236 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:52:43.237 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:52:43.242 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/signin-oidc","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****Ti5g","$type":"Token"},{"TokenType":"access_token","TokenValue":"****64ug","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:00000016","TimeStamp":"2019-03-13T05:52:43.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:52:43.249 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/signin-oidc","State":"3e7f1a16e00d40c6ab1a48ec50a1f6a0","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:52:43.251 +08:00 [DBG] Augmenting SignInContext
+2019-03-13 13:52:43.252 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-03-13 13:52:44.434 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:52:44.438 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:52:44.440 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:52:44.443 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:52:44.445 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:52:44.448 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:52:44.449 +08:00 [DBG] Start discovery request
+2019-03-13 13:52:44.488 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2019-03-13 13:52:44.491 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:52:44.494 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:52:44.496 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-03-13 13:52:44.502 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-03-13 13:52:44.506 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-03-13 13:52:44.508 +08:00 [DBG] Start key discovery request
+2019-03-13 13:52:44.569 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2019-03-13 13:52:44.572 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:52:44.573 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:52:44.580 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2019-03-13 13:52:44.583 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:52:44.584 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:52:44.586 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-03-13 13:52:44.588 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-03-13 13:52:44.589 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-03-13 13:52:44.593 +08:00 [DBG] Start userinfo request
+2019-03-13 13:52:44.593 +08:00 [DBG] Bearer token found in header
+2019-03-13 13:52:44.596 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:52:44.596 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:52:44.597 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-03-13 13:52:44.598 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-03-13 13:52:44.599 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1552456363,"exp":1552456663,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"AngularClient","sub":"818727","auth_time":1552456363,"idp":"local","scope":["openid","profile","address","email","phone","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-03-13 13:52:44.607 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-03-13 13:52:44.608 +08:00 [DBG] Creating userinfo response
+2019-03-13 13:52:44.608 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:52:44.609 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:52:44.610 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at address email email_verified phone_number phone_number_verified
+2019-03-13 13:52:44.611 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-03-13 13:52:44.613 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","email","email_verified","phone_number","phone_number_verified"] via UserInfoEndpoint
+2019-03-13 13:52:44.621 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address"]
+2019-03-13 13:52:44.622 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website address
+2019-03-13 13:52:44.623 +08:00 [DBG] End userinfo request
+2019-03-13 13:52:44.656 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:52:44.660 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:52:44.663 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:52:44.665 +08:00 [DBG] Rendering check session result
+2019-03-13 13:56:44.655 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:56:44.657 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:56:44.658 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:56:44.659 +08:00 [DBG] Start authorize request
+2019-03-13 13:56:44.660 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:56:44.662 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:56:44.663 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:56:44.665 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:56:44.667 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"23562b8493b545e6bacde99ac1d31cd1","UiLocales":null,"Nonce":"418372f22cdf40dfb75c12f9d9cc219c","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"9c2c4833435dbd5d39fd821a814476e2","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/redirect-silentrenew","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"23562b8493b545e6bacde99ac1d31cd1","nonce":"418372f22cdf40dfb75c12f9d9cc219c","prompt":"none","id_token_hint":"***REDACTED***"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:56:44.677 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:56:44.678 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-13 13:56:44.679 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:56:44.680 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:56:44.681 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:56:44.681 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:56:44.683 +08:00 [DBG] Issued claims: []
+2019-03-13 13:56:44.687 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:56:44.690 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:56:44.694 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****T0Qg","$type":"Token"},{"TokenType":"access_token","TokenValue":"****zYQA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:00000018","TimeStamp":"2019-03-13T05:56:44.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:56:44.702 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/redirect-silentrenew","State":"23562b8493b545e6bacde99ac1d31cd1","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:56:45.626 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:56:45.634 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:56:45.635 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:56:45.636 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:56:45.638 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:56:45.639 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:56:45.640 +08:00 [DBG] Start discovery request
+2019-03-13 13:56:45.669 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:56:45.671 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:56:45.672 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:56:45.673 +08:00 [DBG] Rendering check session result
+2019-03-13 13:56:46.640 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:56:46.644 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:56:46.645 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:56:46.646 +08:00 [DBG] Start authorize request
+2019-03-13 13:56:46.647 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:56:46.647 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:56:46.648 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:56:46.650 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:56:46.651 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"952d8884a2c8405992e9014cfb3be82e","UiLocales":null,"Nonce":"5651202ba613456289f7fc73b3ee5155","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"9c2c4833435dbd5d39fd821a814476e2","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/redirect-silentrenew","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"952d8884a2c8405992e9014cfb3be82e","nonce":"5651202ba613456289f7fc73b3ee5155","prompt":"none","id_token_hint":"***REDACTED***"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:56:46.662 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:56:46.662 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-13 13:56:46.665 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:56:46.665 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:56:46.666 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:56:46.667 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:56:46.668 +08:00 [DBG] Issued claims: []
+2019-03-13 13:56:46.671 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:56:46.673 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:56:46.678 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****v_JA","$type":"Token"},{"TokenType":"access_token","TokenValue":"****vuXg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:0000001A","TimeStamp":"2019-03-13T05:56:46.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:56:46.687 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/redirect-silentrenew","State":"952d8884a2c8405992e9014cfb3be82e","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:56:47.169 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:56:47.171 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:56:47.172 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:56:47.173 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:56:47.174 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:56:47.175 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:56:47.176 +08:00 [DBG] Start discovery request
+2019-03-13 13:56:47.228 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:56:47.231 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:56:47.232 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:56:47.233 +08:00 [DBG] Rendering check session result
+2019-03-13 13:56:48.181 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:56:48.182 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:56:48.184 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:56:48.185 +08:00 [DBG] Start authorize request
+2019-03-13 13:56:48.186 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:56:48.187 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:56:48.188 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:56:48.189 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:56:48.194 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"6a6f6dbc5906468ca8316e49370a3ed0","UiLocales":null,"Nonce":"ee8b5d13e059400b84ae662782a29653","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"9c2c4833435dbd5d39fd821a814476e2","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/redirect-silentrenew","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"6a6f6dbc5906468ca8316e49370a3ed0","nonce":"ee8b5d13e059400b84ae662782a29653","prompt":"none","id_token_hint":"***REDACTED***"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:56:48.203 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:56:48.205 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-13 13:56:48.208 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:56:48.209 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:56:48.210 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:56:48.211 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:56:48.212 +08:00 [DBG] Issued claims: []
+2019-03-13 13:56:48.215 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:56:48.216 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:56:48.222 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****C4fg","$type":"Token"},{"TokenType":"access_token","TokenValue":"****SiiQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:0000001C","TimeStamp":"2019-03-13T05:56:48.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:56:48.228 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/redirect-silentrenew","State":"6a6f6dbc5906468ca8316e49370a3ed0","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:56:48.692 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:56:48.693 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:56:48.695 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:56:48.695 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:56:48.697 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:56:48.698 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:56:48.700 +08:00 [DBG] Start discovery request
+2019-03-13 13:56:48.718 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:56:48.719 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:56:48.721 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:56:48.722 +08:00 [DBG] Rendering check session result
+2019-03-13 13:56:49.706 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:56:49.708 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:56:49.710 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:56:49.712 +08:00 [DBG] Start authorize request
+2019-03-13 13:56:49.713 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:56:49.713 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:56:49.714 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:56:49.715 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:56:49.719 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"bae1fa48224e469bb18d3ecbd409fede","UiLocales":null,"Nonce":"a09e48585e6244249b62215e8667b72e","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"9c2c4833435dbd5d39fd821a814476e2","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/redirect-silentrenew","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"bae1fa48224e469bb18d3ecbd409fede","nonce":"a09e48585e6244249b62215e8667b72e","prompt":"none","id_token_hint":"***REDACTED***"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:56:49.727 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:56:49.729 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-13 13:56:49.730 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:56:49.730 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:56:49.731 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:56:49.731 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:56:49.733 +08:00 [DBG] Issued claims: []
+2019-03-13 13:56:49.735 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:56:49.736 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:56:49.742 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****Jzwg","$type":"Token"},{"TokenType":"access_token","TokenValue":"****NyVw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:0000001E","TimeStamp":"2019-03-13T05:56:49.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:56:49.750 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/redirect-silentrenew","State":"bae1fa48224e469bb18d3ecbd409fede","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:56:50.189 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:56:50.191 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:56:50.192 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:56:50.193 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:56:50.194 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:56:50.197 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:56:50.198 +08:00 [DBG] Start discovery request
+2019-03-13 13:56:50.213 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:56:50.215 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:56:50.217 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:56:50.218 +08:00 [DBG] Rendering check session result
+2019-03-13 13:56:51.203 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:56:51.205 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:56:51.207 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:56:51.209 +08:00 [DBG] Start authorize request
+2019-03-13 13:56:51.209 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:56:51.210 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:56:51.211 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:56:51.213 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:56:51.214 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"1bd68db23ddd429da02c15b8a759c7a8","UiLocales":null,"Nonce":"dab78de1a8b842fd83a6eadbfab2cfd8","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"9c2c4833435dbd5d39fd821a814476e2","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/redirect-silentrenew","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"1bd68db23ddd429da02c15b8a759c7a8","nonce":"dab78de1a8b842fd83a6eadbfab2cfd8","prompt":"none","id_token_hint":"***REDACTED***"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:56:51.222 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:56:51.222 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-13 13:56:51.223 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:56:51.224 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:56:51.226 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:56:51.227 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:56:51.228 +08:00 [DBG] Issued claims: []
+2019-03-13 13:56:51.231 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:56:51.232 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:56:51.235 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****afgw","$type":"Token"},{"TokenType":"access_token","TokenValue":"****oInw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:00000020","TimeStamp":"2019-03-13T05:56:51.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:56:51.240 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/redirect-silentrenew","State":"1bd68db23ddd429da02c15b8a759c7a8","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:56:51.690 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:56:51.691 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:56:51.692 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:56:51.698 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:56:51.700 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:56:51.704 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:56:51.706 +08:00 [DBG] Start discovery request
+2019-03-13 13:56:51.723 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:56:51.725 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:56:51.727 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:56:51.728 +08:00 [DBG] Rendering check session result
+2019-03-13 13:56:52.704 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:56:52.706 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:56:52.708 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:56:52.710 +08:00 [DBG] Start authorize request
+2019-03-13 13:56:52.711 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:56:52.712 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:56:52.712 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:56:52.714 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:56:52.715 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"3def924edc4c43648286c32c4dcf46f7","UiLocales":null,"Nonce":"020f2b0d23984d958ec9df863c481b6e","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"9c2c4833435dbd5d39fd821a814476e2","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/redirect-silentrenew","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"3def924edc4c43648286c32c4dcf46f7","nonce":"020f2b0d23984d958ec9df863c481b6e","prompt":"none","id_token_hint":"***REDACTED***"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:56:52.728 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:56:52.728 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-13 13:56:52.729 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:56:52.730 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:56:52.731 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:56:52.732 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:56:52.736 +08:00 [DBG] Issued claims: []
+2019-03-13 13:56:52.741 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:56:52.742 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:56:52.745 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****lBmw","$type":"Token"},{"TokenType":"access_token","TokenValue":"****15tA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:00000022","TimeStamp":"2019-03-13T05:56:52.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:56:52.757 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/redirect-silentrenew","State":"3def924edc4c43648286c32c4dcf46f7","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:56:53.194 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:56:53.196 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:56:53.197 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:56:53.198 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:56:53.199 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:56:53.201 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:56:53.202 +08:00 [DBG] Start discovery request
+2019-03-13 13:56:53.218 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:56:53.221 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:56:53.223 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:56:53.224 +08:00 [DBG] Rendering check session result
+2019-03-13 13:56:54.207 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-03-13 13:56:54.209 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-03-13 13:56:54.211 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-03-13 13:56:54.212 +08:00 [DBG] Start authorize request
+2019-03-13 13:56:54.213 +08:00 [DBG] User in authorize request: 818727
+2019-03-13 13:56:54.213 +08:00 [DBG] Start authorize request protocol validation
+2019-03-13 13:56:54.214 +08:00 [DBG] client configuration validation for client AngularClient succeeded.
+2019-03-13 13:56:54.215 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-03-13 13:56:54.216 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"818727","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"fc7063512d004b8783ee15b82b75da45","UiLocales":null,"Nonce":"c11f13434ea449fbb232d31be71344fd","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"9c2c4833435dbd5d39fd821a814476e2","Raw":{"client_id":"AngularClient","redirect_uri":"http://localhost:4200/redirect-silentrenew","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"fc7063512d004b8783ee15b82b75da45","nonce":"c11f13434ea449fbb232d31be71344fd","prompt":"none","id_token_hint":"***REDACTED***"},"$type":"AuthorizeRequestValidationLog"}
+2019-03-13 13:56:54.225 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-03-13 13:56:54.225 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-03-13 13:56:54.226 +08:00 [DBG] Creating Implicit Flow response.
+2019-03-13 13:56:54.227 +08:00 [DBG] Getting claims for access token for client: AngularClient
+2019-03-13 13:56:54.228 +08:00 [DBG] Getting claims for access token for subject: 818727
+2019-03-13 13:56:54.231 +08:00 [DBG] Get profile called for subject 818727 from client SPA Client with claim types [] via ClaimsProviderAccessToken
+2019-03-13 13:56:54.234 +08:00 [DBG] Issued claims: []
+2019-03-13 13:56:54.237 +08:00 [DBG] Getting claims for identity token for subject: 818727 and client: AngularClient
+2019-03-13 13:56:54.238 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-03-13 13:56:54.243 +08:00 [INF] {"ClientId":"AngularClient","ClientName":"SPA Client","RedirectUri":"http://localhost:4200/redirect-silentrenew","Endpoint":"Authorize","SubjectId":"818727","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****YVew","$type":"Token"},{"TokenType":"access_token","TokenValue":"****ZrWQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLL7EU26IUOC:00000024","TimeStamp":"2019-03-13T05:56:54.0000000Z","ProcessId":11036,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-03-13 13:56:54.248 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"818727","ClientId":"AngularClient","RedirectUri":"http://localhost:4200/redirect-silentrenew","State":"fc7063512d004b8783ee15b82b75da45","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-03-13 13:56:54.705 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 13:56:54.707 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 13:56:54.708 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 13:56:54.709 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 13:56:54.711 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 13:56:54.712 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 13:56:54.713 +08:00 [DBG] Start discovery request
+2019-03-13 13:56:54.729 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 13:56:54.730 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 13:56:54.731 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 13:56:54.733 +08:00 [DBG] Rendering check session result
+2019-03-13 14:03:23.162 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://192.159.93.30:4200
+2019-03-13 14:03:23.174 +08:00 [DBG] Client list checked and origin: http://192.159.93.30:4200 is not allowed
+2019-03-13 14:03:23.175 +08:00 [WRN] CorsPolicyService did not allow origin: http://192.159.93.30:4200
+2019-03-13 14:03:23.177 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 14:03:23.179 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 14:03:23.180 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 14:03:23.181 +08:00 [DBG] Start discovery request
+2019-03-13 14:03:26.756 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://192.159.93.30:4200
+2019-03-13 14:03:26.758 +08:00 [DBG] Client list checked and origin: http://192.159.93.30:4200 is not allowed
+2019-03-13 14:03:26.760 +08:00 [WRN] CorsPolicyService did not allow origin: http://192.159.93.30:4200
+2019-03-13 14:03:26.761 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 14:03:26.763 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 14:03:26.764 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 14:03:26.768 +08:00 [DBG] Start discovery request
+2019-03-13 14:07:20.046 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-03-13 14:07:20.048 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-03-13 14:07:20.051 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-03-13 14:07:20.052 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-03-13 14:07:20.054 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-03-13 14:07:20.055 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-03-13 14:07:20.057 +08:00 [DBG] Start discovery request
+2019-03-13 14:07:20.086 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-03-13 14:07:20.087 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-03-13 14:07:20.089 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-03-13 14:07:20.090 +08:00 [DBG] Rendering check session result

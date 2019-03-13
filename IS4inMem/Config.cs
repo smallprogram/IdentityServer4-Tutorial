@@ -132,6 +132,31 @@ namespace IS4inMem
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.Address
                     }
+                },
+
+                //hybrid flow client
+                new Client
+                {
+                    ClientId = "HybirdClient",
+                    ClientName = "Asp.net Core hybird Client",
+                    AllowedGrantTypes = GrantTypes.Hybrid,
+
+                    RedirectUris = { "http://localhost:6000/signin-oidc" },   //登录之后的跳转地址
+                    PostLogoutRedirectUris = { "http://localhost:6000/signout-callback-oidc" },  //登出之后的跳转地址
+
+                    AllowOfflineAccess = true, //返回refreshToken
+
+                    AlwaysIncludeUserClaimsInIdToken = false, //总是返回带有用户Claims的idToken
+
+                    AllowedScopes =
+                    {
+                        "api1",
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.Phone,
+                        IdentityServerConstants.StandardScopes.Email,
+                        IdentityServerConstants.StandardScopes.Address
+                    }
                 }
             };
         }
