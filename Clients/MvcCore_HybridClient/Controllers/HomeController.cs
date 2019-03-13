@@ -24,7 +24,8 @@ namespace MvcCore_HybridClient.Controllers
             return View();
         }
 
-        [Authorize(Roles ="admin,user")]
+        //[Authorize(Roles ="admin,user")]
+        [Authorize(policy: "SmithInSomewhere")]
         public async Task<IActionResult> Privacy()
         {
             var accessToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.AccessToken);
@@ -42,7 +43,7 @@ namespace MvcCore_HybridClient.Controllers
             return View();
         }
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "user")]
         public async Task<IActionResult> ApiSource()
         {
             var client = new HttpClient();

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using MvcCore_HybridClient.AuthorizationPolicy;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace MvcCore_HybridClient
@@ -47,6 +49,7 @@ namespace MvcCore_HybridClient
             })
             .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme,options =>
             {
+                //配置登录失败的跳转地址
                 options.AccessDeniedPath = "/Account/AccessDenied";
             })   //添加Cookies
             .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>    //配置oidc
@@ -69,6 +72,7 @@ namespace MvcCore_HybridClient
                 options.Scope.Add(OidcConstants.StandardScopes.Phone);
                 options.Scope.Add(OidcConstants.StandardScopes.Address);
                 options.Scope.Add("roles");
+                options.Scope.Add("locations");
                 options.Scope.Add(OidcConstants.StandardScopes.OfflineAccess);  //获取refreshToken 用于获取刷新Access Token
 
 
@@ -93,6 +97,28 @@ namespace MvcCore_HybridClient
                 };
 
             });
+
+
+            //定义策略授权模式
+            services.AddAuthorization(options =>
+            {
+                //options.AddPolicy("SmithInSomewhere", builder =>
+                //{
+                //    builder.RequireAuthenticatedUser();
+                //    builder.RequireClaim(JwtClaimTypes.FamilyName, "Smith");
+                //    builder.RequireClaim("location", "cd");
+                //});
+
+
+                //自定义的授权策略
+                options.AddPolicy("SmithInSomewhere", builder =>
+                {
+                    builder.AddRequirements(new SmithInSomewareRequirement());
+                });
+            });
+
+            //将定义的策略注入到服务中
+            services.AddSingleton<IAuthorizationHandler, SmithInSomewhereHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
