@@ -53,7 +53,7 @@ namespace MvcCore_HybridClient
                 options.ClientId = "HybirdClient";
                 options.ClientSecret = "bc6126ff-fcf2-4e67-a912-4e70cd2fb73d";
                 options.SaveTokens = true;
-                options.ResponseType = "code id_token";   //配置oidc相应类型
+                options.ResponseType = "code id_token";   //配置oidc相应类型，方式1，返回 AuthorizationCode和IdToken
                 options.Scope.Clear();
                 options.Scope.Add("api1");
                 options.Scope.Add(OidcConstants.StandardScopes.OpenId);

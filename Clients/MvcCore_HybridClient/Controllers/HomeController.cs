@@ -71,7 +71,11 @@ namespace MvcCore_HybridClient.Controllers
             ViewBag.content = content;
             return View();
         }
-
+        [Authorize]
+        public IActionResult Login()
+        {
+            return View();
+        }
 
         public IActionResult Logout()
         {
