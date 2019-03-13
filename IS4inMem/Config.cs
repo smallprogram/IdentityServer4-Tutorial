@@ -147,7 +147,7 @@ namespace IS4inMem
 
                     AllowOfflineAccess = true, //返回refreshToken
 
-                    AlwaysIncludeUserClaimsInIdToken = false, //总是返回带有用户Claims的idToken
+                    AlwaysIncludeUserClaimsInIdToken = true, //总是返回带有用户Claims的idToken
 
                     AllowedScopes =
                     {
