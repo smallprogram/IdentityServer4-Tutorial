@@ -24,7 +24,8 @@ namespace MvcCore_HybridClient.Controllers
             return View();
         }
 
-        [Authorize]
+        //[Authorize(Roles ="admin,user")]
+        [Authorize(policy: "SmithInSomewhere")]
         public async Task<IActionResult> Privacy()
         {
             var accessToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.AccessToken);
@@ -42,7 +43,7 @@ namespace MvcCore_HybridClient.Controllers
             return View();
         }
 
-        [Authorize]
+        [Authorize(Roles = "user")]
         public async Task<IActionResult> ApiSource()
         {
             var client = new HttpClient();
@@ -88,6 +89,10 @@ namespace MvcCore_HybridClient.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+
+
 
 
         private async Task<string> RenewTokensAsync()

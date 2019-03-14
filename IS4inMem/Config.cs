@@ -2,6 +2,7 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using IdentityModel;
 using IdentityServer4;
 using IdentityServer4.Models;
 using System.Collections.Generic;
@@ -19,6 +20,8 @@ namespace IS4inMem
                 new IdentityResources.Address(),
                 new IdentityResources.Email(),
                 new IdentityResources.Phone(),
+                new IdentityResource("roles","角色",new List<string>{JwtClaimTypes.Role}), //为Identity资源添加角色Clams
+                new IdentityResource("locations", "地点", new List<string> { "location" }), //为Identity资源添加地点Clams
             };
         }
 
@@ -26,7 +29,7 @@ namespace IS4inMem
         {
             return new ApiResource[]
             {
-                new ApiResource("api1", "My API #1")
+                new ApiResource("api1", "My API #1", new List<string> {"locations" })
             };
         }
 
@@ -156,7 +159,9 @@ namespace IS4inMem
                         IdentityServerConstants.StandardScopes.Profile,
                         IdentityServerConstants.StandardScopes.Phone,
                         IdentityServerConstants.StandardScopes.Email,
-                        IdentityServerConstants.StandardScopes.Address
+                        IdentityServerConstants.StandardScopes.Address,
+                        "roles",
+                        "locations"
                     }
                 }
             };
