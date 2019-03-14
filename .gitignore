@@ -22,3 +22,5 @@
 /IS4inMem/obj
 /Clients/MvcCore_HybridClient/obj
 /Clients/MvcCore_HybridClient/bin/Debug/netcoreapp2.2
+/.vs/IdentityServer4-Tutorial/v15
+/.vs
