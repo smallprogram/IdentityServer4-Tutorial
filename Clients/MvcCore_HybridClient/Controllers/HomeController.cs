@@ -78,9 +78,52 @@ namespace MvcCore_HybridClient.Controllers
             return View();
         }
 
-        public IActionResult Logout()
+        public async Task<IActionResult> Logout()
         {
-            return SignOut(CookieAuthenticationDefaults.AuthenticationScheme, OpenIdConnectDefaults.AuthenticationScheme);
+            var client = new HttpClient();
+            var disco = await client.GetDiscoveryDocumentAsync("http://localhost:5000/");
+            if (disco.IsError)
+            {
+                throw new Exception(disco.Error);
+            }
+            //获取当前AccessToken
+            var accessToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.AccessToken);
+            if (!string.IsNullOrWhiteSpace(accessToken))
+            {
+                //撤销当前AccessToken
+                var revokeAccessTokenResponse = await client.RevokeTokenAsync(new TokenRevocationRequest
+                {
+                    Address = disco.RevocationEndpoint,
+                    ClientId = "HybirdClient",
+                    ClientSecret = "bc6126ff-fcf2-4e67-a912-4e70cd2fb73d",
+                    Token = accessToken
+                });
+
+                if (revokeAccessTokenResponse.IsError)
+                {
+                    throw new Exception("Access Token Revocation Failed: " + revokeAccessTokenResponse.Error);
+                }
+            }
+
+            var refreshToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.RefreshToken);
+            if (!string.IsNullOrWhiteSpace(refreshToken))
+            {
+                //撤销当前refreshToken
+                var revokeRefreshTokenResponse = await client.RevokeTokenAsync(new TokenRevocationRequest
+                {
+                    Address = disco.RevocationEndpoint,
+                    ClientId = "HybirdClient",
+                    ClientSecret = "bc6126ff-fcf2-4e67-a912-4e70cd2fb73d",
+                    Token = refreshToken
+                });
+
+                if (revokeRefreshTokenResponse.IsError)
+                {
+                    throw new Exception("Refresh Token Revocation Failed: " + revokeRefreshTokenResponse.Error);
+                }
+            }
+
+            //return SignOut(CookieAuthenticationDefaults.AuthenticationScheme, OpenIdConnectDefaults.AuthenticationScheme);
         }
 
 

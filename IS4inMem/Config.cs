@@ -30,6 +30,9 @@ namespace IS4inMem
             return new ApiResource[]
             {
                 new ApiResource("api1", "My API #1", new List<string> {"locations" })
+                {
+                    ApiSecrets = {new Secret("bc6126ff-fcf2-4e67-a912-4e70cd2fb73d".Sha256())}
+                }
             };
         }
 
@@ -143,6 +146,14 @@ namespace IS4inMem
                     ClientId = "HybirdClient",
                     ClientName = "Asp.net Core hybird Client",
                     AllowedGrantTypes = GrantTypes.Hybrid,
+
+                    //使用ReferenceToken而非JWT Token，
+                    //ReferenceToken相对于没有生命周期控制的JWTToken来讲具有声明周期控制
+                    //每次访问受保护资源都会与IS4进行通信
+                    //适用于安全级别较高的应用
+                    AccessTokenType = AccessTokenType.Reference,  
+
+
                     ClientSecrets = { new Secret("bc6126ff-fcf2-4e67-a912-4e70cd2fb73d".Sha256()) },
 
                     RedirectUris = { "http://localhost:5004/signin-oidc" },   //登录之后的跳转地址
